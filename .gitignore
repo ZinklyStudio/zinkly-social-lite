@@ -1,0 +1,18 @@
+# Your own install: settings, database, backups and logs (never commit these)
+/data/*
+!/data/.htaccess
+!/data/index.html
+
+# Uploaded photos and videos
+/uploads/*
+!/uploads/.htaccess
+!/uploads/index.html
+
+# Installed extensions
+/extensions/*
+!/extensions/.htaccess
+!/extensions/index.html
+
+.env
+.DS_Store
+Thumbs.db
