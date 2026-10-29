@@ -1,0 +1,13 @@
+# Extensions: only their css, js, images and fonts are served. PHP and settings files never run or download from the web.
+<IfModule mod_negotiation.c>
+    Options -Indexes
+</IfModule>
+<FilesMatch "\.(php|phtml|phar|php\d|inc|json|md|txt|ini|lock|log|sql|sqlite|zip|sh|py|pl|cgi|htaccess|env|yml|yaml|xml|twig|tpl)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
