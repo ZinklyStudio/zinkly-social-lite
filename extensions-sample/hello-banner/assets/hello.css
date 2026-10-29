@@ -1,0 +1,5 @@
+.hb-card { position: relative; overflow: hidden; }
+.hb-card p { padding: 0 16px 16px; color: var(--muted); font-size: 14px; }
+.hb-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; background: var(--grad); }
+.hb-green::before { background: linear-gradient(90deg, #10b981, #84cc16); }
+.hb-amber::before { background: linear-gradient(90deg, #f59e0b, #f97316); }

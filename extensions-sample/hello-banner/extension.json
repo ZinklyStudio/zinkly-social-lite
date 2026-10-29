@@ -1,0 +1,15 @@
+{
+    "id": "hello-banner",
+    "name": "Hello Banner",
+    "version": "1.0.0",
+    "description": "Example extension: an announcement card in the sidebar and a page in the admin menu. Use it as a starting point for your own.",
+    "author": "Zinkly Social Lite",
+    "main": "extension.php",
+    "requires": "1.0.0",
+    "settings": [
+        { "key": "title", "label": "Card title", "type": "text", "default": "Announcement" },
+        { "key": "message", "label": "Message", "type": "textarea", "default": "Welcome! Say hi in the comments 👋" },
+        { "key": "show_guests", "label": "Show to visitors too", "type": "toggle", "default": "1" },
+        { "key": "style", "label": "Colour", "type": "select", "options": { "violet": "Violet", "green": "Green", "amber": "Amber" }, "default": "violet" }
+    ]
+}
